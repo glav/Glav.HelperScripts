@@ -11,4 +11,9 @@ echo - Docker-StartNginx
 echo.
 echo General
 echo - Gen-GetFirstDirEntry
+echo - Gen-EditPowershellProfileInISE
+
+echo.
+echo - List-Helpers (This help list)
+
 
