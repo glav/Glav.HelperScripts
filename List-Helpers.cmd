@@ -12,9 +12,11 @@ echo.
 echo General
 echo - Gen-GetFirstDirEntry
 echo - Gen-EditPowershellProfileInISE
+echo - Gen-GenerateCsr
 echo.
 echo Azure
 echo - Azure-ListAssetsInResourceGroup
+echo - Azure-GetVMStatus
 
 echo.
 echo - List-Helpers (This help list)
