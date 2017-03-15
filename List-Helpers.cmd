@@ -8,6 +8,7 @@ echo - Docker-GetFirstContainerId
 echo - Docker-StopAllContainers
 echo - Docker-RemoveAllStoppedContainers
 echo - Docker-StartNginx
+echo - Docker-StartAzureCli
 echo.
 echo General
 echo - Gen-GetFirstDirEntry
