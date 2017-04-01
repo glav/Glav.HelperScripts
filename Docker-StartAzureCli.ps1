@@ -1,4 +1,4 @@
-﻿Write-Host "Starting Azure CLI in docker container."
-Write-Host "Note: No volumes have been mounted so changes will be lost"
+﻿"Staring Azure CLI using local/host system .ssh RSA file"
 
-docker run  -it azuresdk/azure-cli-python
+#run the azure CLI image in interactive mode, but mounting the local system RSA keys to the container
+docker run -it -v C:/Users/glav/.ssh:/root/.ssh azuresdk/azure-cli-python
