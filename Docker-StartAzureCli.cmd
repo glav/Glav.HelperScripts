@@ -1,2 +1,2 @@
 @echo off
-powershell -file  "%~dp0Docker-StartAzureCli.ps1"
+powershell -file  "%~dp0Docker-StartAzureCli.ps1" 
