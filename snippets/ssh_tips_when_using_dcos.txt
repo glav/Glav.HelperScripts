@@ -1,0 +1,7 @@
+#Note: The id_rsa private key and id_rsa.pub public key must be the ones used to create the cluster
+
+#This resolves the "WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!" error if it shows as the host is not in the known_hosts file
+ssh-keygen -R myacsmgmt.westus.cloudapp.azure.com
+
+#To open up port 88 locally to DCOS cluster
+ssh -fNL 80:localhost:88 -p 2200 azureuser@myacsmgmt.westus.cloudapp.azure.com
