@@ -9,6 +9,7 @@ echo - Docker-StopAllContainers
 echo - Docker-RemoveAllStoppedContainers
 echo - Docker-StartNginx
 echo - Docker-StartAzureCli
+echo - Docker-StartSonarQube
 echo.
 echo General
 echo - Gen-GetFirstDirEntry
