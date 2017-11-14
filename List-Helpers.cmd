@@ -21,6 +21,7 @@ echo.
 echo Azure
 echo - Azure-ListAssetsInResourceGroup
 echo - Azure-GetVMStatus
+echo - Azure-ListAdminsIn365Tenant
 
 echo.
 echo - List-Helpers (This help list)
