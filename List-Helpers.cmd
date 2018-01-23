@@ -12,6 +12,7 @@ echo - Docker-StartAzureCli
 echo - Docker-StartAzureCliShell
 echo - Docker-StartSonarQube
 echo - Docker-StartCosmosDbEmulator
+echo - Docker-StartLinuxSql
 echo.
 echo General
 echo - Gen-GetFirstDirEntry
