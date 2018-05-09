@@ -13,6 +13,7 @@ echo - Docker-StartAzureCliShell
 echo - Docker-StartSonarQube
 echo - Docker-StartCosmosDbEmulator
 echo - Docker-StartLinuxSql
+echo - Docker-SetupInspec
 echo.
 echo General
 echo - Gen-GetFirstDirEntry
@@ -23,6 +24,9 @@ echo Azure
 echo - Azure-ListAssetsInResourceGroup
 echo - Azure-GetVMStatus
 echo - Azure-ListAdminsIn365Tenant
+echo .
+echo Utility Commands
+echo - 'inspec' - Invoke Inspec docker image. Need to ensure 'Docker-SetupInspec' has been run.
 
 echo.
 echo - List-Helpers (This help list)
