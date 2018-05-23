@@ -27,6 +27,8 @@ echo - Azure-ListAdminsIn365Tenant
 echo .
 echo Utility Commands
 echo - 'inspec' - Invoke Inspec docker image. Need to ensure 'Docker-SetupInspec' has been run.
+echo - 'edit' - Invoke Notepad++
+echo - 'Get-SSH-Agent' - Setup SSH Agent for use in powershell to prevent asking for passphrase all the time.
 
 echo.
 echo - List-Helpers (This help list)
