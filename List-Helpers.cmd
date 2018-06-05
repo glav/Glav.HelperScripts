@@ -14,6 +14,9 @@ echo - Docker-StartSonarQube
 echo - Docker-StartCosmosDbEmulator
 echo - Docker-StartLinuxSql
 echo - Docker-SetupInspec
+echo .
+echo Git Related
+echo - 'git-list-release-info' - Lists all commit msgs from HEAD till the 1st TAG encountered (powershell-PS1 and bash script-SH)
 echo.
 echo General
 echo - Gen-GetFirstDirEntry
