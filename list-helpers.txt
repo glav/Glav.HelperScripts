@@ -1,0 +1,35 @@
+List of Helper Scripts
+~~~~~~~~~~~~~~~~~~~~~~
+
+Docker Related
+ - Docker-GetFirstContainerId
+ - Docker-StopAllContainers
+ - Docker-RemoveAllStoppedContainers
+ - Docker-StartNginx
+ - Docker-StartAzureCli
+ - Docker-StartAzureCliShell
+ - Docker-StartSonarQube
+ - Docker-StartCosmosDbEmulator
+ - Docker-StartLinuxSql
+ - Docker-SetupInspec
+
+ Git Related
+ - 'git-list-release-info' - Lists all commit msgs from HEAD till the 1st TAG encountered (powershell-PS1 and bash script-SH)
+
+ General
+ - Gen-GetFirstDirEntry
+ - Gen-EditPowershellProfileInISE
+ - Gen-GenerateCsr
+
+ Azure
+ - Azure-ListAssetsInResourceGroup
+ - Azure-GetVMStatus
+ - Azure-ListAdminsIn365Tenant
+
+ Utility Commands
+ - 'inspec' - Invoke Inspec docker image. Need to ensure 'Docker-SetupInspec' has been run.
+ - 'edit' - Invoke Notepad++
+
+ - List-Helpers (This help list)
+
+
