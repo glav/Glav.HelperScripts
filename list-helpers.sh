@@ -1,1 +1,2 @@
-cat List-Helpers.txt
+#!/bin/bash
+more "${0%/*}"/List-Helpers.txt
