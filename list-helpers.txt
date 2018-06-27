@@ -15,7 +15,9 @@ Docker Related
 
  Git Related
  - 'git-list-release-info' - Lists all commit msgs from HEAD till the 1st TAG encountered (powershell-PS1 and bash script-SH)
-
+ - 'update-release-notes' - Updates a 'relnotes.txt' file with a list of commits from GIT repo from HEAD to last tag.
+                            Commits Annoted with NEW: and BUGFIX: are listed separately under 'New' and 'Bugs' respectively.
+							(Powershell only)
  General
  - Gen-GetFirstDirEntry
  - Gen-EditPowershellProfileInISE
