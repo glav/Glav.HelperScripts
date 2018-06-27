@@ -7,7 +7,7 @@ $newVersion)
 # see https://discuss.bitrise.io/t/how-to-generate-release-notes-changelog-from-git-commits-since-last-git-tag/2941
 
 $scriptPath = Get-Location
-$filePath = "$scriptPath\ReleaseNotes.txt"
+$filePath = "$scriptPath\ReleaseNotes.md"
 $priorReleaseNotes = ""
 
 #Get the last tag
@@ -31,7 +31,7 @@ function addToFile($heading, $content)
 {
   if ($content) {
     Add-Content -Path $filePath -value "### $heading"
-    $content | ForEach-Object { Add-Content -Path $filePath -value $_ }
+    $content | ForEach-Object { Add-Content -Path $filePath -value ("* " + $_) }
   }
  
 }
