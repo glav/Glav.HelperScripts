@@ -6,8 +6,8 @@ $newVersion)
 #So, it will list from HEAD, each commit up until a current TAG is encountered in the commit history
 # see https://discuss.bitrise.io/t/how-to-generate-release-notes-changelog-from-git-commits-since-last-git-tag/2941
 
-$scriptPath = split-path -parent $MyInvocation.MyCommand.Definition
-$filePath = "$scriptPath\relnotes.txt"
+$scriptPath = Get-Location
+$filePath = "$scriptPath\ReleaseNotes.txt"
 $priorReleaseNotes = ""
 
 #Get the last tag
