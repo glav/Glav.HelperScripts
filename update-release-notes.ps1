@@ -52,7 +52,7 @@ Remove-Item $filePath
 
 #Write the header
 Add-Content -Path $filePath -value ""
-Add-Content -Path $filePath -value "## [Version: $newVersion $(Get-Date)]"
+Add-Content -Path $filePath -value "## Version: $newVersion [$(Get-Date)]"
 
 #Write the latest changes into the release notes file
 addToFile "New Items" $newChanges
