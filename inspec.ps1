@@ -1,1 +1,0 @@
-docker run -it --rm -v "$(pwd):/share" chef/inspec $args;
