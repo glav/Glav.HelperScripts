@@ -12,6 +12,7 @@ Docker Related
  - Docker-StartCosmosDbEmulator
  - Docker-StartLinuxSql
  - Docker-SetupInspec
+ - Docker-inspec - Invoke Inspec docker image. Need to ensure 'Docker-SetupInspec' has been run.
 
  Git Related
  - 'git-list-release-info' - Lists all commit msgs from HEAD till the 1st TAG encountered (powershell-PS1 and bash script-SH)
@@ -29,7 +30,6 @@ Docker Related
  - Azure-ListAdminsIn365Tenant
 
  Utility Commands
- - 'inspec' - Invoke Inspec docker image. Need to ensure 'Docker-SetupInspec' has been run.
  - 'edit' - Invoke Notepad++
 
  - List-Helpers (This help list)
