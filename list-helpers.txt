@@ -25,6 +25,7 @@ Docker Related
  - Gen-GenerateCsr
 
  Azure
+ - Azure-ListAPIPermissionsGuids - Lists the Guids that represent the permissions such as 'Directory.ReadAll' when granting API permissions
  - Azure-ListAssetsInResourceGroup
  - Azure-GetVMStatus
  - Azure-ListAdminsIn365Tenant
