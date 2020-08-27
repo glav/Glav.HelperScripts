@@ -25,13 +25,15 @@ Docker Related
  - Gen-GenerateCsr
 
  Azure
- - Azure-ListAPIPermissionsGuids - Lists the Guids that represent the permissions such as 'Directory.ReadAll' when granting API permissions
- - Azure-ListAssetsInResourceGroup
- - Azure-GetVMStatus
- - Azure-ListAdminsIn365Tenant
- - Azure-ExpiredResourceGroups - Lists and/or deletes expired resource groups in Azure. Relies in the group having a tag 'expiresOn' and a date in format 'YYYY-MM-DD'
+ - Azure-Find-Principal-By-Name - Searches for a service principal with the name containing the specified text and returns object Ids
+ - Azure-Find-Principal-Id-By-Name - Searches for a service principal with the name matching the specified text and returns object Id
+ - Azure-List-API-Permissions-Guids - Lists the Guids that represent the permissions such as 'Directory.ReadAll' when granting API permissions
+ - Azure-List-Assets-In-Resource-Group
+ - Azure-Get-VMS-tatus
+ - Azure-List-Admins-In-365Tenant
+ - Azure-Expired-Resource-Groups - Lists and/or deletes expired resource groups in Azure. Relies in the group having a tag 'expiresOn' and a date in format 'YYYY-MM-DD'
  - Azure-Create-Rbac-Principal - Creates a service principal in the nominated subscription. Requires subscription Id to be supplied
-
+ - Azure-Create-Service-Principal-For-Rbac-With-Graph-Api-Permissions - Creates a service principal in the subscription as a reader with a series of Azure AD and Graph API permissions to enable iteration over resources for security scanning purposes (eg. ScoutSuite)
  Utility Commands
  - 'edit' - Invoke Notepad++
 
