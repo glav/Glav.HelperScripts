@@ -32,6 +32,7 @@ Write-Host "Done"
 Write-Host ""
 
 Write-Host "## Important! Copy these values. You will not be able to retrieve them later ##"
-Write-Host "Client Id:     " $secrets.clientId
-Write-Host "Client Secret: " $secrets.clientSecret
-Write-Host "Tenant Id:     " $secrets.tenantId
+Write-Host "Subscription Id: " $secrets.subscriptionId
+Write-Host "Client Id:       " $secrets.clientId
+Write-Host "Client Secret:   " $secrets.clientSecret
+Write-Host "Tenant Id:       " $secrets.tenantId
