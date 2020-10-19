@@ -11,6 +11,7 @@ Docker Related
  - Docker-StartSonarQube
  - Docker-StartCosmosDbEmulator
  - Docker-StartLinuxSql
+ - Docker-StartEventStore - Starts a local container for the EventStore (eventstore.com) event sourcing product.
  - Docker-SetupInspec
  - Docker-inspec - Invoke Inspec docker image. Need to ensure 'Docker-SetupInspec' has been run.
 
