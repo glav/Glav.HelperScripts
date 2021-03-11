@@ -38,6 +38,7 @@ Docker Related
  Utility Commands
  - 'edit' - Invoke Notepad++
 
+ - List-valid-windows-timezones - Simply lists the valid windows timezone strings/identifier you can use. Handy for ARRM templates and windows VM's
  - List-Helpers (This help list)
 
 
