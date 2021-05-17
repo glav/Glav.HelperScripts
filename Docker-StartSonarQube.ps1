@@ -1,3 +1,5 @@
-﻿"Staring SonarQube with Postgress database"
+﻿"Staring SonarQube with local/non prod database"
 
-docker-compose -f "C:/Development/Dev Resources/HelperScripts/snippets/SonarQubePostgressCompose.yml" up
+"Go to http://localhost:9000 once started"
+
+docker run -d --name sonarqube -e SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true -p 9000:9000 sonarqube:latest

@@ -35,10 +35,14 @@ Docker Related
  - Azure-Expired-Resource-Groups - Lists and/or deletes expired resource groups in Azure. Relies in the group having a tag 'expiresOn' and a date in format 'YYYY-MM-DD'
  - Azure-Create-Rbac-Principal - Creates a service principal in the nominated subscription. Requires subscription Id to be supplied
  - Azure-Create-Service-Principal-For-Rbac-With-Graph-Api-Permissions - Creates a service principal in the subscription as a reader with a series of Azure AD and Graph API permissions to enable iteration over resources for security scanning purposes (eg. ScoutSuite)
+ - Azure-list-valid-windows-timezones - Simply lists the valid windows timezone strings/identifier you can use. Handy for ARM templates and windows VM's
+ 
+ Dotnet
+ - dotnet-setup-dev-certs - Clean/remove existing development certificates, and re-install new development certificates with the specified password.
+ 
  Utility Commands
  - 'edit' - Invoke Notepad++
 
- - List-valid-windows-timezones - Simply lists the valid windows timezone strings/identifier you can use. Handy for ARRM templates and windows VM's
  - List-Helpers (This help list)
 
 
