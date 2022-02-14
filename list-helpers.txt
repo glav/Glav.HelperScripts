@@ -5,6 +5,7 @@ Docker Related
  - Docker-GetFirstContainerId
  - Docker-StopAllContainers
  - Docker-RemoveAllStoppedContainers
+ - Docker-StartAzureRite - Starts Azurerite storage emulator
  - Docker-StartNginx
  - Docker-StartAzureCli
  - Docker-StartAzureCliShell
