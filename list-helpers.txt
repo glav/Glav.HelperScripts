@@ -25,6 +25,7 @@ Docker Related
  - Gen-GetFirstDirEntry
  - Gen-EditPowershellProfileInISE
  - Gen-GenerateCsr
+ - Gen-AddPathTemporarily - Adds a directory to the searched path to the current session only.
 
  Azure
  - Azure-Find-Principal-By-Name - Searches for a service principal with the name containing the specified text and returns object Ids
