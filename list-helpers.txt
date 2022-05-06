@@ -38,6 +38,7 @@ Docker Related
  - Azure-Create-Rbac-Principal - Creates a service principal in the nominated subscription. Requires subscription Id to be supplied
  - Azure-Create-Service-Principal-For-Rbac-With-Graph-Api-Permissions - Creates a service principal in the subscription as a reader with a series of Azure AD and Graph API permissions to enable iteration over resources for security scanning purposes (eg. ScoutSuite)
  - Azure-list-valid-windows-timezones - Simply lists the valid windows timezone strings/identifier you can use. Handy for ARM templates and windows VM's
+ - Azure-Get-All-Subscription-Resources - Exports all Azure resources to a CSV file, listing resource group, name, type, created and changed times.
  
  Dotnet
  - dotnet-setup-dev-certs - Clean/remove existing development certificates, and re-install new development certificates with the specified password.
