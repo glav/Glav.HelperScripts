@@ -15,6 +15,10 @@ Docker Related
  - Docker-StartEventStore - Starts a local container for the EventStore (eventstore.com) event sourcing product.
  - Docker-SetupInspec
  - Docker-inspec - Invoke Inspec docker image. Need to ensure 'Docker-SetupInspec' has been run.
+ 
+ WSL Specific
+ - wsl-install-docker-linux-part1-docker.sh - Installs docker for use in WSL2. Requires closing session after done.
+ - wsl-install-docker-linux-part2-docker-compose.sh - Installs docker-compose and windows credential manager for use in WSL2. Requires closing session after done and some manual config changes.
 
  Git Related
  - 'git-list-release-info' - Lists all commit msgs from HEAD till the 1st TAG encountered (powershell-PS1 and bash script-SH)
