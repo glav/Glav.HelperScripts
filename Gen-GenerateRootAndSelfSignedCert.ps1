@@ -2,13 +2,13 @@
 # These certificates are installed in the local store.
 # These certificates are needed when connecting to a VPN gateway in Azure (For example)
 
-
 # Create a self-signed root certificate. 
 param(
     [String]$RootCertificateName = "P2SRootCert",
     [String]$ClientCertificateName = "P2SChildCert",
     [String]$ExportedClientCertPassword = "ClientCertPassword"
 )
+$originalColour = $host.UI.RawUI.ForegroundColor
 
 $params = @{
     Type = 'Custom'
@@ -51,7 +51,7 @@ Export-Certificate -cert $rootCert.PSPath -FilePath $fileNameToUse > $NIL
 $cerBytes = Get-Content $fileNameToUse -AsByteStream
 $pubKey = [System.Convert]::ToBase64String($cerBytes) 
 $pubKeyFileName = "$RootCertificateName.cer"
-Set-Content -Path $pubKeyFileName -Value "-----BEGIN CERTIFICATE-----\n$pubKey\n-----END CERTIFICATE-----\n"
+Set-Content -Path $pubKeyFileName -Value "-----BEGIN CERTIFICATE-----`r`n$pubKey`r`n-----END CERTIFICATE-----`r`n"
 Write-Host "Writing Base64 encoded public key for root certificate to file: [$pubKeyFileName]"
 Write-Host ""
 Write-Host "Public key for Root Certificate: [$RootCertificateName]"
@@ -65,9 +65,11 @@ Write-Host "Exporting Client Certificate with private key to file: [$fileNameToU
 
 $pfxPwd = ConvertTo-SecureString -String $ExportedClientCertPassword -Force -AsPlainText
 Export-PfxCertificate -cert $clientCert.PSPath -FilePath "$fileNameToUse" -Password $pfxPwd  > $NIL
-Write-Host "Exported Client certificate [$fileNameToUse] using password: [$ExportedClientCertPassword]"
+
+Write-Host "Exported Client certificate [$fileNameToUse] using password: $ExportedClientCertPassword" -ForegroundColor Yellow
 #$pfxBytes = Get-Content "$fileNameToUse" -AsByteStream
 #[System.Convert]::ToBase64String($pfxBytes) | Out-File "$ClientCertificateName.txt"
 
+$host.UI.RawUI.ForegroundColor = $originalColour
 
 
